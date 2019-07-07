@@ -12,13 +12,13 @@ import Action
 
 struct TeamsViewModel {
     private let sceneCoordinator: SceneCoordinator
-    private let networkService: NetworkService
+    private let networkService: NetworkingType
     private let globalScheduler = ConcurrentDispatchQueueScheduler(queue: DispatchQueue.global())
     private let bag = DisposeBag()
     let title: Observable<String>
     let cellData: Observable<[Team]>
 
-    init(sceneCoordinator: SceneCoordinator, networkService: NetworkService, model: League) {
+    init(sceneCoordinator: SceneCoordinator, networkService: NetworkingType, model: League) {
         self.sceneCoordinator = sceneCoordinator
         self.networkService = networkService
         self.title = Observable.just(model.name)

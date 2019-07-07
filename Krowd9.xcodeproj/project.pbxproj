@@ -11,17 +11,24 @@
 		F92BF92322CEA4CC00C04AB5 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF92222CEA4CC00C04AB5 /* Path.swift */; };
 		F92BF92722CF4C0E00C04AB5 /* Realm+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF92622CF4C0E00C04AB5 /* Realm+Rx.swift */; };
 		F92BF92922CF5D4900C04AB5 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF92822CF5D4900C04AB5 /* RealmProvider.swift */; };
-		F92BF92B22CFDC9300C04AB5 /* IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF92A22CFDC9300C04AB5 /* IdentifiableType.swift */; };
 		F92BF93022D1F7A700C04AB5 /* Krowd9Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF92F22D1F7A700C04AB5 /* Krowd9Color.swift */; };
 		F92BF93222D1F94E00C04AB5 /* Krowd9ThemeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93122D1F94E00C04AB5 /* Krowd9ThemeOptions.swift */; };
 		F92BF93522D1FB7700C04AB5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93322D1FB7700C04AB5 /* CustomTableViewCell.swift */; };
 		F92BF93622D1FB7700C04AB5 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92BF93422D1FB7700C04AB5 /* CustomTableViewCell.xib */; };
 		F92BF93822D2417B00C04AB5 /* Krowd9FontAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93722D2417B00C04AB5 /* Krowd9FontAttributes.swift */; };
 		F92BF93C22D24F8700C04AB5 /* LogoAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93B22D24F8700C04AB5 /* LogoAnimator.swift */; };
+		F942997522D283FB0009A559 /* NetworkingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942997422D283FB0009A559 /* NetworkingType.swift */; };
+		F942997722D2859A0009A559 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942997622D2859A0009A559 /* MockNetworkService.swift */; };
+		F942997922D286380009A559 /* JSONFileDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942997822D286380009A559 /* JSONFileDecoder.swift */; };
+		F942997C22D288D60009A559 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = F942997B22D288D60009A559 /* countries.json */; };
+		F942998022D2A2560009A559 /* LeaguesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942997F22D2A2560009A559 /* LeaguesViewModelTests.swift */; };
+		F942998222D2A2DC0009A559 /* leagues.json in Resources */ = {isa = PBXBuildFile; fileRef = F942998122D2A2DC0009A559 /* leagues.json */; };
+		F942998422D2A84E0009A559 /* TeamsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942998322D2A84E0009A559 /* TeamsViewModelTests.swift */; };
+		F942998622D2A85B0009A559 /* TeamViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F942998522D2A85B0009A559 /* TeamViewModelTests.swift */; };
+		F942998822D2A9280009A559 /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = F942998722D2A9280009A559 /* teams.json */; };
 		F94CC1174BBCE0A3AC3C0931 /* Pods_Krowd9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC61CC224710C55E0EAA587C /* Pods_Krowd9.framework */; };
 		F9A6AD3522CE5FFD00243F95 /* TeamsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6AD3322CE5FFD00243F95 /* TeamsCollectionViewCell.swift */; };
 		F9A6AD3622CE5FFD00243F95 /* TeamsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A6AD3422CE5FFD00243F95 /* TeamsCollectionViewCell.xib */; };
-		F9A6AD3822CE60D400243F95 /* UIImageView+load.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6AD3722CE60D400243F95 /* UIImageView+load.swift */; };
 		F9A6AD3B22CE8C8F00243F95 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6AD3A22CE8C8F00243F95 /* TeamViewController.swift */; };
 		F9A6AD3D22CE8CA900243F95 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6AD3C22CE8CA900243F95 /* TeamViewModel.swift */; };
 		F9AA59A522CB58F90018EBFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA59A422CB58F90018EBFA /* AppDelegate.swift */; };
@@ -29,7 +36,7 @@
 		F9AA59AA22CB58F90018EBFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9AA59A822CB58F90018EBFA /* Main.storyboard */; };
 		F9AA59AC22CB58FA0018EBFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AA59AB22CB58FA0018EBFA /* Assets.xcassets */; };
 		F9AA59AF22CB58FA0018EBFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9AA59AD22CB58FA0018EBFA /* LaunchScreen.storyboard */; };
-		F9AA59BA22CB58FA0018EBFA /* Krowd9Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA59B922CB58FA0018EBFA /* Krowd9Tests.swift */; };
+		F9AA59BA22CB58FA0018EBFA /* CountriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA59B922CB58FA0018EBFA /* CountriesViewModelTests.swift */; };
 		F9AA59C522CBB5D70018EBFA /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA59C422CBB5D70018EBFA /* BindableType.swift */; };
 		F9AA59C722CBBAE20018EBFA /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA59C622CBBAE20018EBFA /* LeaguesViewController.swift */; };
 		F9AA59C922CBBB280018EBFA /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA59C822CBBB280018EBFA /* TeamsViewController.swift */; };
@@ -71,16 +78,23 @@
 		F92BF92222CEA4CC00C04AB5 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		F92BF92622CF4C0E00C04AB5 /* Realm+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Rx.swift"; sourceTree = "<group>"; };
 		F92BF92822CF5D4900C04AB5 /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
-		F92BF92A22CFDC9300C04AB5 /* IdentifiableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableType.swift; sourceTree = "<group>"; };
 		F92BF92F22D1F7A700C04AB5 /* Krowd9Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Krowd9Color.swift; sourceTree = "<group>"; };
 		F92BF93122D1F94E00C04AB5 /* Krowd9ThemeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Krowd9ThemeOptions.swift; sourceTree = "<group>"; };
 		F92BF93322D1FB7700C04AB5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		F92BF93422D1FB7700C04AB5 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		F92BF93722D2417B00C04AB5 /* Krowd9FontAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Krowd9FontAttributes.swift; sourceTree = "<group>"; };
 		F92BF93B22D24F8700C04AB5 /* LogoAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimator.swift; sourceTree = "<group>"; };
+		F942997422D283FB0009A559 /* NetworkingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingType.swift; sourceTree = "<group>"; };
+		F942997622D2859A0009A559 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		F942997822D286380009A559 /* JSONFileDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileDecoder.swift; sourceTree = "<group>"; };
+		F942997B22D288D60009A559 /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		F942997F22D2A2560009A559 /* LeaguesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewModelTests.swift; sourceTree = "<group>"; };
+		F942998122D2A2DC0009A559 /* leagues.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = leagues.json; sourceTree = "<group>"; };
+		F942998322D2A84E0009A559 /* TeamsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModelTests.swift; sourceTree = "<group>"; };
+		F942998522D2A85B0009A559 /* TeamViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModelTests.swift; sourceTree = "<group>"; };
+		F942998722D2A9280009A559 /* teams.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
 		F9A6AD3322CE5FFD00243F95 /* TeamsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F9A6AD3422CE5FFD00243F95 /* TeamsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamsCollectionViewCell.xib; sourceTree = "<group>"; };
-		F9A6AD3722CE60D400243F95 /* UIImageView+load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+load.swift"; sourceTree = "<group>"; };
 		F9A6AD3A22CE8C8F00243F95 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		F9A6AD3C22CE8CA900243F95 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
 		F9AA59A122CB58F90018EBFA /* Krowd9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krowd9.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +105,7 @@
 		F9AA59AE22CB58FA0018EBFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9AA59B022CB58FA0018EBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9AA59B522CB58FA0018EBFA /* Krowd9Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Krowd9Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9AA59B922CB58FA0018EBFA /* Krowd9Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Krowd9Tests.swift; sourceTree = "<group>"; };
+		F9AA59B922CB58FA0018EBFA /* CountriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModelTests.swift; sourceTree = "<group>"; };
 		F9AA59BB22CB58FA0018EBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9AA59C422CBB5D70018EBFA /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		F9AA59C622CBBAE20018EBFA /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +191,16 @@
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
+		F942997A22D288BF0009A559 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F942997B22D288D60009A559 /* countries.json */,
+				F942998122D2A2DC0009A559 /* leagues.json */,
+				F942998722D2A9280009A559 /* teams.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		F9A6AD3922CE8C7300243F95 /* Team */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +238,7 @@
 				F9AA59AB22CB58FA0018EBFA /* Assets.xcassets */,
 				F9AA59AD22CB58FA0018EBFA /* LaunchScreen.storyboard */,
 				F9AA59B022CB58FA0018EBFA /* Info.plist */,
+				F942997A22D288BF0009A559 /* Data */,
 				F92BF92E22D1F78700C04AB5 /* Styles */,
 				F9AA59EE22CBEC260018EBFA /* Custom Types */,
 				F92BF93F22D26C3700C04AB5 /* Custom Views */,
@@ -232,7 +257,10 @@
 		F9AA59B822CB58FA0018EBFA /* Krowd9Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F9AA59B922CB58FA0018EBFA /* Krowd9Tests.swift */,
+				F9AA59B922CB58FA0018EBFA /* CountriesViewModelTests.swift */,
+				F942997F22D2A2560009A559 /* LeaguesViewModelTests.swift */,
+				F942998322D2A84E0009A559 /* TeamsViewModelTests.swift */,
+				F942998522D2A85B0009A559 /* TeamViewModelTests.swift */,
 				F9AA59BB22CB58FA0018EBFA /* Info.plist */,
 			);
 			path = Krowd9Tests;
@@ -289,7 +317,9 @@
 			isa = PBXGroup;
 			children = (
 				F9AA59EC22CBE9FE0018EBFA /* NetworkService.swift */,
+				F942997622D2859A0009A559 /* MockNetworkService.swift */,
 				F92BF92822CF5D4900C04AB5 /* RealmProvider.swift */,
+				F942997822D286380009A559 /* JSONFileDecoder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -299,7 +329,6 @@
 			children = (
 				F9AA59EA22CBE6DD0018EBFA /* URLSession+Rx.swift */,
 				F9AA59F522CD33E00018EBFA /* UINib+init.swift */,
-				F9A6AD3722CE60D400243F95 /* UIImageView+load.swift */,
 				F92BF92622CF4C0E00C04AB5 /* Realm+Rx.swift */,
 			);
 			path = Extensions;
@@ -313,8 +342,8 @@
 				F9AA59D522CBBDE60018EBFA /* SceneTransitionType.swift */,
 				F9AA59EF22CBEC480018EBFA /* Endpoint.swift */,
 				F92BF92222CEA4CC00C04AB5 /* Path.swift */,
-				F92BF92A22CFDC9300C04AB5 /* IdentifiableType.swift */,
 				F92BF93B22D24F8700C04AB5 /* LogoAnimator.swift */,
+				F942997422D283FB0009A559 /* NetworkingType.swift */,
 			);
 			path = "Custom Types";
 			sourceTree = "<group>";
@@ -350,6 +379,7 @@
 				F9AA59B122CB58FA0018EBFA /* Sources */,
 				F9AA59B222CB58FA0018EBFA /* Frameworks */,
 				F9AA59B322CB58FA0018EBFA /* Resources */,
+				1BE84FD6B117FF0A6581726D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,10 +434,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F942997C22D288D60009A559 /* countries.json in Resources */,
 				F9AA59AF22CB58FA0018EBFA /* LaunchScreen.storyboard in Resources */,
 				F9A6AD3622CE5FFD00243F95 /* TeamsCollectionViewCell.xib in Resources */,
 				F92BF93622D1FB7700C04AB5 /* CustomTableViewCell.xib in Resources */,
+				F942998822D2A9280009A559 /* teams.json in Resources */,
 				F9AA59AC22CB58FA0018EBFA /* Assets.xcassets in Resources */,
+				F942998222D2A2DC0009A559 /* leagues.json in Resources */,
 				F9AA59AA22CB58F90018EBFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +455,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1BE84FD6B117FF0A6581726D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krowd9Tests/Pods-Krowd9Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Krowd9Tests/Pods-Krowd9Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Krowd9Tests/Pods-Krowd9Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		33535421D1B32B270E35C74F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,7 +561,6 @@
 				F9AA59E322CBDB6A0018EBFA /* Country.swift in Sources */,
 				F9A6AD3B22CE8C8F00243F95 /* TeamViewController.swift in Sources */,
 				F9AA59A722CB58F90018EBFA /* CountriesViewController.swift in Sources */,
-				F92BF92B22CFDC9300C04AB5 /* IdentifiableType.swift in Sources */,
 				F92BF93522D1FB7700C04AB5 /* CustomTableViewCell.swift in Sources */,
 				F9AA59C522CBB5D70018EBFA /* BindableType.swift in Sources */,
 				F9AA59A522CB58F90018EBFA /* AppDelegate.swift in Sources */,
@@ -522,13 +571,15 @@
 				F92BF92322CEA4CC00C04AB5 /* Path.swift in Sources */,
 				F9AA59CD22CBBBA20018EBFA /* LeaguesViewModel.swift in Sources */,
 				F92BF93822D2417B00C04AB5 /* Krowd9FontAttributes.swift in Sources */,
+				F942997522D283FB0009A559 /* NetworkingType.swift in Sources */,
 				F9AA59CB22CBBB760018EBFA /* CountriesViewModel.swift in Sources */,
 				F9AA59CF22CBBBC70018EBFA /* TeamsViewModel.swift in Sources */,
 				F9A6AD3522CE5FFD00243F95 /* TeamsCollectionViewCell.swift in Sources */,
 				F9AA59C922CBBB280018EBFA /* TeamsViewController.swift in Sources */,
 				F92BF93C22D24F8700C04AB5 /* LogoAnimator.swift in Sources */,
+				F942997922D286380009A559 /* JSONFileDecoder.swift in Sources */,
 				F9AA59F022CBEC480018EBFA /* Endpoint.swift in Sources */,
-				F9A6AD3822CE60D400243F95 /* UIImageView+load.swift in Sources */,
+				F942997722D2859A0009A559 /* MockNetworkService.swift in Sources */,
 				F9AA59D422CBBD840018EBFA /* SceneCoordinatorType.swift in Sources */,
 				F9A6AD3D22CE8CA900243F95 /* TeamViewModel.swift in Sources */,
 				F92BF93222D1F94E00C04AB5 /* Krowd9ThemeOptions.swift in Sources */,
@@ -548,7 +599,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9AA59BA22CB58FA0018EBFA /* Krowd9Tests.swift in Sources */,
+				F9AA59BA22CB58FA0018EBFA /* CountriesViewModelTests.swift in Sources */,
+				F942998622D2A85B0009A559 /* TeamViewModelTests.swift in Sources */,
+				F942998422D2A84E0009A559 /* TeamsViewModelTests.swift in Sources */,
+				F942998022D2A2560009A559 /* LeaguesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

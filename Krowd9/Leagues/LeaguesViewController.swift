@@ -60,7 +60,8 @@ extension LeaguesViewController: BindableType {
                 //swiftlint:enable force_cast
                 cell.selectionStyle = .none
 
-                let attributedText = NSAttributedString(string: element.name, attributes: Krowd9FontAttributes.cellTitle.attributes)
+                let attributedText = NSAttributedString(string: element.name,
+                                                        attributes: Krowd9FontAttributes.cellTitle.attributes)
                 cell.nameLabel.attributedText = attributedText
                 cell.logoImageView.image = element.logo
                 cell.styleCell(red: row % 2 == 0, firstCell: row == 0)

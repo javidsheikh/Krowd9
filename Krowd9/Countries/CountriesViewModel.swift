@@ -15,18 +15,19 @@ import Action
 struct CountriesViewModel {
 
     private let sceneCoordinator: SceneCoordinator
-    private let networkService: NetworkService
+    private let networkService: NetworkingType
     private let globalScheduler = ConcurrentDispatchQueueScheduler(queue: DispatchQueue.global())
     private let bag = DisposeBag()
     let title: Observable<String>
+    let countriesObservable: Observable<Country>
     let cellData: Observable<[Country]>
 
-    init(sceneCoordinator: SceneCoordinator, networkService: NetworkService) {
+    init(sceneCoordinator: SceneCoordinator, networkService: NetworkingType) {
         self.sceneCoordinator = sceneCoordinator
         self.networkService = networkService
         self.title = Observable.just("Countries")
 
-        networkService.decode(endpoint: .countries, type: CountryService.self)
+        self.countriesObservable = networkService.decode(endpoint: .countries, type: CountryService.self)
             .observeOn(globalScheduler)
             .flatMap { service -> Observable<Country> in
                 return Observable.create { observer in
@@ -34,6 +35,9 @@ struct CountriesViewModel {
                     return Disposables.create()
                 }
             }
+            .share(replay: 1, scope: .forever)
+
+        self.countriesObservable
             .filter({ country in
                 let realm = RealmProvider.current.realm
                 return realm.objects(Country.self).filter(NSPredicate(format: "country = %@", country.country)).isEmpty

@@ -10,11 +10,11 @@ import RxSwift
 import RealmSwift
 
 extension ObservableType where Element: Object {
-    func addToRealm(withId id: Int? = nil) -> Observable<Element> {
+    func addToRealm(withId identifier: Int? = nil) -> Observable<Element> {
         return self.do(onNext: { object in
             let realm = RealmProvider.current.realm
             try? realm.write {
-                if let team = object as? Team, let leagueId = id {
+                if let team = object as? Team, let leagueId = identifier {
                     team.leagueId = leagueId
                 }
                 realm.add(object, update: .modified)

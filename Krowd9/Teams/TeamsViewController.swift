@@ -47,13 +47,6 @@ extension TeamsViewController: BindableType {
 
         viewModel.cellData
             .subscribeOn(MainScheduler.instance)
-//            .do(onCompleted: {
-//                self.loadView?.removeFromSuperview()
-//            }, onSubscribe: {
-//                self.loadView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.width))
-//                self.loadView?.backgroundColor = .yellow
-//                self.view.addSubview(self.loadView!)
-//            })
             .bind(to: collectionView.rx.items) { collectionView, item, element in
                 let indexPath = IndexPath(item: item, section: 0)
                 //swiftlint:disable force_cast
@@ -83,7 +76,9 @@ extension TeamsViewController: UICollectionViewDelegate, UICollectionViewDelegat
 }
 
 extension TeamsViewController: UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 
         guard let selectedIndexPathCell = collectionView.indexPathsForSelectedItems?.first,
             let selectedCell = collectionView.cellForItem(at: selectedIndexPathCell),

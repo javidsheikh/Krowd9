@@ -11,14 +11,15 @@ import RealmSwift
 class Team: Object, Decodable {
     @objc dynamic var teamId: Int = 0
     @objc dynamic var name = ""
-    @objc private dynamic var _logo: String?
+    //swiftlint:disable identifier_name
+    @objc private dynamic var _logo: Data?
     var founded = RealmOptional<Int>()
     @objc dynamic var venueName: String?
     var venueCapacity = RealmOptional<Int>()
     @objc dynamic var leagueId: Int = 0
 
     var logo: UIImage {
-        guard let logoURLString = _logo, let image = UIImage(urlString: logoURLString) else {
+        guard let data = _logo, let image = UIImage(data: data) else {
             return UIImage(named: "error")!
         }
         return image
@@ -37,15 +38,30 @@ class Team: Object, Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let teamId = try container.decode(Int.self, forKey: .teamId)
         let name = try container.decode(String.self, forKey: .name)
-        let logo = try container.decodeIfPresent(String.self, forKey: .logo)
+        let logoURL = try container.decodeIfPresent(String.self, forKey: .logo)
+        var _logo: Data?
+        if let urlString = logoURL, let url = URL(string: urlString) {
+            _logo = try Data(contentsOf: url)
+        }
         let founded = try container.decodeIfPresent(Int.self, forKey: .founded)
         let venueName = try container.decodeIfPresent(String.self, forKey: .venueName)
         let venueCapacity = try container.decodeIfPresent(Int.self, forKey: .venueCapacity)
 
-        self.init(teamId: teamId, name: name, logo: logo, founded: RealmOptional<Int>(founded), venueName: venueName, venueCapacity: RealmOptional<Int>(venueCapacity))
+        self.init(teamId: teamId,
+                  name: name,
+                  logo: _logo,
+                  founded: RealmOptional<Int>(founded),
+                  venueName: venueName,
+                  venueCapacity: RealmOptional<Int>(venueCapacity))
+        //swiftlint:enable identifier_name
     }
 
-    convenience init(teamId: Int, name: String, logo: String?, founded: RealmOptional<Int>, venueName: String?, venueCapacity: RealmOptional<Int>) {
+    convenience init(teamId: Int,
+                     name: String,
+                     logo: Data?,
+                     founded: RealmOptional<Int>,
+                     venueName: String?,
+                     venueCapacity: RealmOptional<Int>) {
         self.init()
 
         self.teamId = teamId

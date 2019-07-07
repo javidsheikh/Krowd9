@@ -1,0 +1,85 @@
+{
+    "api": {
+        "results": 6,
+        "leagues": [
+            {
+                "league_id": 2,
+                "name": "Premier League",
+                "country": "England",
+                "country_code": "GB",
+                "season": 2018,
+                "season_start": "2018-08-10",
+                "season_end": "2019-05-12",
+                "logo": "https://www.api-football.com/public/leagues/2.png",
+                "flag": "https://www.api-football.com/public/flags/gb.svg",
+                "standings": 1,
+                "is_current": 0
+            },
+            {
+                "league_id": 3,
+                "name": "Championship",
+                "country": "England",
+                "country_code": "GB",
+                "season": 2018,
+                "season_start": "2018-08-03",
+                "season_end": "2019-05-27",
+                "logo": "https://www.api-football.com/public/leagues/3.png",
+                "flag": "https://www.api-football.com/public/flags/gb.svg",
+                "standings": 1,
+                "is_current": 0
+            },
+            {
+                "league_id": 164,
+                "name": "League One",
+                "country": "England",
+                "country_code": "GB",
+                "season": 2018,
+                "season_start": "2018-08-04",
+                "season_end": "2019-05-26",
+                "logo": "https://www.api-football.com/public/leagues/164.png",
+                "flag": "https://www.api-football.com/public/flags/gb.svg",
+                "standings": 1,
+                "is_current": 0
+            },
+            {
+                "league_id": 167,
+                "name": "League Two",
+                "country": "England",
+                "country_code": "GB",
+                "season": 2018,
+                "season_start": "2018-08-04",
+                "season_end": "2019-05-25",
+                "logo": "https://www.api-football.com/public/leagues/167.png",
+                "flag": "https://www.api-football.com/public/flags/gb.svg",
+                "standings": 1,
+                "is_current": 0
+            },
+            {
+                "league_id": 222,
+                "name": "National League",
+                "country": "England",
+                "country_code": "GB",
+                "season": 2018,
+                "season_start": "2018-08-04",
+                "season_end": "2019-04-27",
+                "logo": "https://www.api-football.com/public/leagues/222.png",
+                "flag": "https://www.api-football.com/public/flags/gb.svg",
+                "standings": 1,
+                "is_current": 1
+            },
+            {
+                "league_id": 225,
+                "name": "FA WSL",
+                "country": "England",
+                "country_code": "GB",
+                "season": 2018,
+                "season_start": "2018-09-09",
+                "season_end": "2019-05-11",
+                "logo": "https://www.api-football.com/public/leagues/225.jpg",
+                "flag": "https://www.api-football.com/public/flags/gb.svg",
+                "standings": 1,
+                "is_current": 1
+            }
+        ]
+    }
+}

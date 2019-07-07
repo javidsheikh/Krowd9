@@ -9,8 +9,8 @@
 import Foundation
 import RxSwift
 
-struct NetworkService {
-    let session: URLSession
+struct NetworkService: NetworkingType {
+    private let session: URLSession
     private let baseURL: Observable<String>
 
     private var headers: [String: String] {

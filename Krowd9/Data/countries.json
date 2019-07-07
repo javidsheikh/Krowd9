@@ -1,0 +1,522 @@
+{
+    "api": {
+        "results": 103,
+        "countries": [
+            {
+                "country": "Albania",
+                "code": "AL",
+                "flag": "https://www.api-football.com/public/flags/al.svg"
+            },
+            {
+                "country": "Algeria",
+                "code": "DZ",
+                "flag": "https://www.api-football.com/public/flags/dz.svg"
+            },
+            {
+                "country": "Andorra",
+                "code": "AD",
+                "flag": "https://www.api-football.com/public/flags/ad.svg"
+            },
+            {
+                "country": "Argentina",
+                "code": "AR",
+                "flag": "https://www.api-football.com/public/flags/ar.svg"
+            },
+            {
+                "country": "Armenia",
+                "code": "AM",
+                "flag": "https://www.api-football.com/public/flags/am.svg"
+            },
+            {
+                "country": "Australia",
+                "code": "AU",
+                "flag": "https://www.api-football.com/public/flags/au.svg"
+            },
+            {
+                "country": "Austria",
+                "code": "AT",
+                "flag": "https://www.api-football.com/public/flags/at.svg"
+            },
+            {
+                "country": "Belarus",
+                "code": "BY",
+                "flag": "https://www.api-football.com/public/flags/by.svg"
+            },
+            {
+                "country": "Belgium",
+                "code": "BE",
+                "flag": "https://www.api-football.com/public/flags/be.svg"
+            },
+            {
+                "country": "Bolivia",
+                "code": "BO",
+                "flag": "https://www.api-football.com/public/flags/bo.svg"
+            },
+            {
+                "country": "Bosnia",
+                "code": "BA",
+                "flag": "https://www.api-football.com/public/flags/ba.svg"
+            },
+            {
+                "country": "Brazil",
+                "code": "BR",
+                "flag": "https://www.api-football.com/public/flags/br.svg"
+            },
+            {
+                "country": "Bulgaria",
+                "code": "BG",
+                "flag": "https://www.api-football.com/public/flags/bg.svg"
+            },
+            {
+                "country": "Canada",
+                "code": "CA",
+                "flag": "https://www.api-football.com/public/flags/ca.svg"
+            },
+            {
+                "country": "Chile",
+                "code": "CL",
+                "flag": "https://www.api-football.com/public/flags/cl.svg"
+            },
+            {
+                "country": "China",
+                "code": "CN",
+                "flag": "https://www.api-football.com/public/flags/cn.svg"
+            },
+            {
+                "country": "Colombia",
+                "code": "CO",
+                "flag": "https://www.api-football.com/public/flags/co.svg"
+            },
+            {
+                "country": "Costa-Rica",
+                "code": "CR",
+                "flag": "https://www.api-football.com/public/flags/cr.svg"
+            },
+            {
+                "country": "Croatia",
+                "code": "HR",
+                "flag": "https://www.api-football.com/public/flags/hr.svg"
+            },
+            {
+                "country": "Cyprus",
+                "code": "CY",
+                "flag": "https://www.api-football.com/public/flags/cy.svg"
+            },
+            {
+                "country": "Czech-Republic",
+                "code": "CZ",
+                "flag": "https://www.api-football.com/public/flags/cz.svg"
+            },
+            {
+                "country": "Denmark",
+                "code": "DK",
+                "flag": "https://www.api-football.com/public/flags/dk.svg"
+            },
+            {
+                "country": "Ecuador",
+                "code": "EC",
+                "flag": "https://www.api-football.com/public/flags/ec.svg"
+            },
+            {
+                "country": "Egypt",
+                "code": "EG",
+                "flag": "https://www.api-football.com/public/flags/eg.svg"
+            },
+            {
+                "country": "El-Salvador",
+                "code": "SV",
+                "flag": "https://www.api-football.com/public/flags/sv.svg"
+            },
+            {
+                "country": "England",
+                "code": "GB",
+                "flag": "https://www.api-football.com/public/flags/gb.svg"
+            },
+            {
+                "country": "Estonia",
+                "code": "EE",
+                "flag": "https://www.api-football.com/public/flags/ee.svg"
+            },
+            {
+                "country": "Ethiopia",
+                "code": "ET",
+                "flag": "https://www.api-football.com/public/flags/et.svg"
+            },
+            {
+                "country": "Faroe-Islands",
+                "code": "FO",
+                "flag": "https://www.api-football.com/public/flags/fo.svg"
+            },
+            {
+                "country": "Fiji",
+                "code": "FJ",
+                "flag": "https://www.api-football.com/public/flags/fj.svg"
+            },
+            {
+                "country": "Finland",
+                "code": "FI",
+                "flag": "https://www.api-football.com/public/flags/fi.svg"
+            },
+            {
+                "country": "France",
+                "code": "FR",
+                "flag": "https://www.api-football.com/public/flags/fr.svg"
+            },
+            {
+                "country": "Georgia",
+                "code": "GE",
+                "flag": "https://www.api-football.com/public/flags/ge.svg"
+            },
+            {
+                "country": "Germany",
+                "code": "DE",
+                "flag": "https://www.api-football.com/public/flags/de.svg"
+            },
+            {
+                "country": "Greece",
+                "code": "GR",
+                "flag": "https://www.api-football.com/public/flags/gr.svg"
+            },
+            {
+                "country": "Guadeloupe",
+                "code": "GP",
+                "flag": "https://www.api-football.com/public/flags/gp.svg"
+            },
+            {
+                "country": "Guatemala",
+                "code": "GT",
+                "flag": "https://www.api-football.com/public/flags/gt.svg"
+            },
+            {
+                "country": "Guinea",
+                "code": "GN",
+                "flag": "https://www.api-football.com/public/flags/gn.svg"
+            },
+            {
+                "country": "Haiti",
+                "code": "HT",
+                "flag": "https://www.api-football.com/public/flags/ht.svg"
+            },
+            {
+                "country": "Honduras",
+                "code": "HN",
+                "flag": "https://www.api-football.com/public/flags/hn.svg"
+            },
+            {
+                "country": "Hong-Kong",
+                "code": "HK",
+                "flag": "https://www.api-football.com/public/flags/hk.svg"
+            },
+            {
+                "country": "Hungary",
+                "code": "HU",
+                "flag": "https://www.api-football.com/public/flags/hu.svg"
+            },
+            {
+                "country": "Iceland",
+                "code": "IS",
+                "flag": "https://www.api-football.com/public/flags/is.svg"
+            },
+            {
+                "country": "India",
+                "code": "IN",
+                "flag": "https://www.api-football.com/public/flags/in.svg"
+            },
+            {
+                "country": "Indonesia",
+                "code": "ID",
+                "flag": "https://www.api-football.com/public/flags/id.svg"
+            },
+            {
+                "country": "Iran",
+                "code": "IR",
+                "flag": "https://www.api-football.com/public/flags/ir.svg"
+            },
+            {
+                "country": "Ireland",
+                "code": "IE",
+                "flag": "https://www.api-football.com/public/flags/ie.svg"
+            },
+            {
+                "country": "Israel",
+                "code": "IL",
+                "flag": "https://www.api-football.com/public/flags/il.svg"
+            },
+            {
+                "country": "Italy",
+                "code": "IT",
+                "flag": "https://www.api-football.com/public/flags/it.svg"
+            },
+            {
+                "country": "Ivory Coast",
+                "code": "CI",
+                "flag": "https://www.api-football.com/public/flags/ci.svg"
+            },
+            {
+                "country": "Jamaica",
+                "code": "JM",
+                "flag": "https://www.api-football.com/public/flags/jm.svg"
+            },
+            {
+                "country": "Japan",
+                "code": "JP",
+                "flag": "https://www.api-football.com/public/flags/jp.svg"
+            },
+            {
+                "country": "Jordan",
+                "code": "JO",
+                "flag": "https://www.api-football.com/public/flags/jo.svg"
+            },
+            {
+                "country": "Kazakhstan",
+                "code": "KZ",
+                "flag": "https://www.api-football.com/public/flags/kz.svg"
+            },
+            {
+                "country": "Kenya",
+                "code": "KE",
+                "flag": "https://www.api-football.com/public/flags/ke.svg"
+            },
+            {
+                "country": "Kuwait",
+                "code": "KW",
+                "flag": "https://www.api-football.com/public/flags/kw.svg"
+            },
+            {
+                "country": "Latvia",
+                "code": "LV",
+                "flag": "https://www.api-football.com/public/flags/lv.svg"
+            },
+            {
+                "country": "Lebanon",
+                "code": "LB",
+                "flag": "https://www.api-football.com/public/flags/lb.svg"
+            },
+            {
+                "country": "Lithuania",
+                "code": "LT",
+                "flag": "https://www.api-football.com/public/flags/lt.svg"
+            },
+            {
+                "country": "Luxembourg",
+                "code": "LU",
+                "flag": "https://www.api-football.com/public/flags/lu.svg"
+            },
+            {
+                "country": "Macedonia",
+                "code": "MK",
+                "flag": "https://www.api-football.com/public/flags/mk.svg"
+            },
+            {
+                "country": "Malawi",
+                "code": "MW",
+                "flag": "https://www.api-football.com/public/flags/mw.svg"
+            },
+            {
+                "country": "Malaysia",
+                "code": "MY",
+                "flag": "https://www.api-football.com/public/flags/my.svg"
+            },
+            {
+                "country": "Malta",
+                "code": "MT",
+                "flag": "https://www.api-football.com/public/flags/mt.svg"
+            },
+            {
+                "country": "Mexico",
+                "code": "MX",
+                "flag": "https://www.api-football.com/public/flags/mx.svg"
+            },
+            {
+                "country": "Moldova",
+                "code": "MD",
+                "flag": "https://www.api-football.com/public/flags/md.svg"
+            },
+            {
+                "country": "Montenegro",
+                "code": "ME",
+                "flag": "https://www.api-football.com/public/flags/me.svg"
+            },
+            {
+                "country": "Morocco",
+                "code": "MA",
+                "flag": "https://www.api-football.com/public/flags/ma.svg"
+            },
+            {
+                "country": "Netherlands",
+                "code": "NL",
+                "flag": "https://www.api-football.com/public/flags/nl.svg"
+            },
+            {
+                "country": "New-Zealand",
+                "code": "NZ",
+                "flag": "https://www.api-football.com/public/flags/nz.svg"
+            },
+            {
+                "country": "Nicaragua",
+                "code": "NI",
+                "flag": "https://www.api-football.com/public/flags/ni.svg"
+            },
+            {
+                "country": "Norway",
+                "code": "NO",
+                "flag": "https://www.api-football.com/public/flags/no.svg"
+            },
+            {
+                "country": "Panama",
+                "code": "PA",
+                "flag": "https://www.api-football.com/public/flags/pa.svg"
+            },
+            {
+                "country": "Paraguay",
+                "code": "PY",
+                "flag": "https://www.api-football.com/public/flags/py.svg"
+            },
+            {
+                "country": "Peru",
+                "code": "PE",
+                "flag": "https://www.api-football.com/public/flags/pe.svg"
+            },
+            {
+                "country": "Poland",
+                "code": "PL",
+                "flag": "https://www.api-football.com/public/flags/pl.svg"
+            },
+            {
+                "country": "Portugal",
+                "code": "PT",
+                "flag": "https://www.api-football.com/public/flags/pt.svg"
+            },
+            {
+                "country": "Qatar",
+                "code": "QA",
+                "flag": "https://www.api-football.com/public/flags/qa.svg"
+            },
+            {
+                "country": "Romania",
+                "code": "RO",
+                "flag": "https://www.api-football.com/public/flags/ro.svg"
+            },
+            {
+                "country": "Russia",
+                "code": "RU",
+                "flag": "https://www.api-football.com/public/flags/ru.svg"
+            },
+            {
+                "country": "Saudi-Arabia",
+                "code": "SA",
+                "flag": "https://www.api-football.com/public/flags/sa.svg"
+            },
+            {
+                "country": "Scotland",
+                "code": "GB",
+                "flag": "https://www.api-football.com/public/flags/gb.svg"
+            },
+            {
+                "country": "Serbia",
+                "code": "RS",
+                "flag": "https://www.api-football.com/public/flags/rs.svg"
+            },
+            {
+                "country": "Singapore",
+                "code": "SG",
+                "flag": "https://www.api-football.com/public/flags/sg.svg"
+            },
+            {
+                "country": "Slovakia",
+                "code": "SK",
+                "flag": "https://www.api-football.com/public/flags/sk.svg"
+            },
+            {
+                "country": "Slovenia",
+                "code": "SI",
+                "flag": "https://www.api-football.com/public/flags/si.svg"
+            },
+            {
+                "country": "South-Africa",
+                "code": "ZA",
+                "flag": "https://www.api-football.com/public/flags/za.svg"
+            },
+            {
+                "country": "South-Korea",
+                "code": "KR",
+                "flag": "https://www.api-football.com/public/flags/kr.svg"
+            },
+            {
+                "country": "Spain",
+                "code": "ES",
+                "flag": "https://www.api-football.com/public/flags/es.svg"
+            },
+            {
+                "country": "Sweden",
+                "code": "SE",
+                "flag": "https://www.api-football.com/public/flags/se.svg"
+            },
+            {
+                "country": "Switzerland",
+                "code": "CH",
+                "flag": "https://www.api-football.com/public/flags/ch.svg"
+            },
+            {
+                "country": "Thailand",
+                "code": "TH",
+                "flag": "https://www.api-football.com/public/flags/th.svg"
+            },
+            {
+                "country": "Tunisia",
+                "code": "TN",
+                "flag": "https://www.api-football.com/public/flags/tn.svg"
+            },
+            {
+                "country": "Turkey",
+                "code": "TR",
+                "flag": "https://www.api-football.com/public/flags/tr.svg"
+            },
+            {
+                "country": "Ukraine",
+                "code": "UA",
+                "flag": "https://www.api-football.com/public/flags/ua.svg"
+            },
+            {
+                "country": "United-Arab-Emirates",
+                "code": "AE",
+                "flag": "https://www.api-football.com/public/flags/ae.svg"
+            },
+            {
+                "country": "Uruguay",
+                "code": "UY",
+                "flag": "https://www.api-football.com/public/flags/uy.svg"
+            },
+            {
+                "country": "USA",
+                "code": "US",
+                "flag": "https://www.api-football.com/public/flags/us.svg"
+            },
+            {
+                "country": "Uzbekistan",
+                "code": "UZ",
+                "flag": "https://www.api-football.com/public/flags/uz.svg"
+            },
+            {
+                "country": "Venezuela",
+                "code": "VE",
+                "flag": "https://www.api-football.com/public/flags/ve.svg"
+            },
+            {
+                "country": "Vietnam",
+                "code": "VN",
+                "flag": "https://www.api-football.com/public/flags/vn.svg"
+            },
+            {
+                "country": "Wales",
+                "code": "GB",
+                "flag": "https://www.api-football.com/public/flags/gb.svg"
+            },
+            {
+                "country": "World",
+                "code": null,
+                "flag": null
+            }
+        ]
+    }
+}

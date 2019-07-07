@@ -20,6 +20,9 @@ target 'Krowd9' do
   target 'Krowd9Tests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
+
   end
 
 end

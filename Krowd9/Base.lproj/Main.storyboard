@@ -123,28 +123,28 @@
                                 <rect key="frame" x="0.0" y="1016" width="414" height="627"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eQ7-tp-sg8">
-                                        <rect key="frame" x="16" y="36" width="382" height="220"/>
+                                        <rect key="frame" x="16" y="36" width="382" height="320"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxz-5j-1F9">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="38.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxz-5j-1F9">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x74-S3-st6">
-                                                <rect key="frame" x="0.0" y="78.5" width="382" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x74-S3-st6">
+                                                <rect key="frame" x="0.0" y="90" width="382" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-z7-bI5">
-                                                <rect key="frame" x="0.0" y="139" width="382" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-z7-bI5">
+                                                <rect key="frame" x="0.0" y="180" width="382" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCm-vh-C9d">
-                                                <rect key="frame" x="0.0" y="199.5" width="382" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCm-vh-C9d">
+                                                <rect key="frame" x="0.0" y="270" width="382" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -152,17 +152,18 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-US-nCt">
-                                        <rect key="frame" x="358" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="363" y="16" width="35" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="7R0-4r-cyT"/>
-                                            <constraint firstAttribute="width" constant="40" id="ax0-YQ-Kdj"/>
+                                            <constraint firstAttribute="height" constant="35" id="7R0-4r-cyT"/>
+                                            <constraint firstAttribute="width" constant="35" id="ax0-YQ-Kdj"/>
                                         </constraints>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                         <state key="normal" image="cross"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="CRc-US-nCt" firstAttribute="top" secondItem="bmK-eR-m9L" secondAttribute="top" id="bN3-ln-Dif"/>
+                                    <constraint firstItem="CRc-US-nCt" firstAttribute="top" secondItem="bmK-eR-m9L" secondAttribute="top" constant="16" id="bN3-ln-Dif"/>
                                     <constraint firstItem="eQ7-tp-sg8" firstAttribute="leading" secondItem="bmK-eR-m9L" secondAttribute="leading" constant="16" id="cng-1i-uaa"/>
                                     <constraint firstAttribute="trailing" secondItem="eQ7-tp-sg8" secondAttribute="trailing" constant="16" id="llU-2H-lld"/>
                                     <constraint firstItem="eQ7-tp-sg8" firstAttribute="top" secondItem="bmK-eR-m9L" secondAttribute="top" constant="36" id="lzt-h8-fJ1"/>
@@ -225,6 +226,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cross" width="20" height="20"/>
+        <image name="cross" width="35" height="35"/>
     </resources>
 </document>

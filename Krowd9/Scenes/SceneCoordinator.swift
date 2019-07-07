@@ -51,7 +51,8 @@ class SceneCoordinator: NSObject, UINavigationControllerDelegate, SceneCoordinat
             navigationController.pushViewController(viewController, animated: true)
 
         case .modal:
-            if let presentingController = currentViewController.navigationController?.viewControllers.last as? UIViewControllerTransitioningDelegate {
+            if let presentingController = currentViewController.navigationController?.viewControllers.last
+                as? UIViewControllerTransitioningDelegate {
                 viewController.transitioningDelegate = presentingController
             }
 
