@@ -14,7 +14,9 @@ class TeamsViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     var viewModel: TeamsViewModel!
-    let bag = DisposeBag()
+    private let bag = DisposeBag()
+    private var loadView: UIView?
+    private let transitionAnimator = LogoAnimator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,10 @@ class TeamsViewController: UIViewController {
     private func styleCollectionView() {
         collectionView.backgroundColor = .black
     }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil
+    }
 }
 
 extension TeamsViewController: BindableType {
@@ -41,6 +47,13 @@ extension TeamsViewController: BindableType {
 
         viewModel.cellData
             .subscribeOn(MainScheduler.instance)
+//            .do(onCompleted: {
+//                self.loadView?.removeFromSuperview()
+//            }, onSubscribe: {
+//                self.loadView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.width))
+//                self.loadView?.backgroundColor = .yellow
+//                self.view.addSubview(self.loadView!)
+//            })
             .bind(to: collectionView.rx.items) { collectionView, item, element in
                 let indexPath = IndexPath(item: item, section: 0)
                 //swiftlint:disable force_cast
@@ -67,4 +80,27 @@ extension TeamsViewController: UICollectionViewDelegate, UICollectionViewDelegat
         return CGSize(width: collectionView.bounds.size.width / 2 - 10, height: collectionView.bounds.size.height / 2 - 10)
     }
 
+}
+
+extension TeamsViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+
+        guard let selectedIndexPathCell = collectionView.indexPathsForSelectedItems?.first,
+            let selectedCell = collectionView.cellForItem(at: selectedIndexPathCell),
+            let selectedCellSuperview = selectedCell.superview else {
+                return nil
+        }
+
+        transitionAnimator.originFrame = selectedCellSuperview.convert(selectedCell.frame, to: nil)
+        transitionAnimator.originFrame = CGRect(
+            x: transitionAnimator.originFrame.origin.x,
+            y: transitionAnimator.originFrame.origin.y,
+            width: transitionAnimator.originFrame.size.width,
+            height: transitionAnimator.originFrame.size.height
+        )
+
+        transitionAnimator.presenting = true
+
+        return transitionAnimator
+    }
 }

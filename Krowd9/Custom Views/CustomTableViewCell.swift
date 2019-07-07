@@ -1,5 +1,5 @@
 //
-//  LeaguesTableViewCell.swift
+//  CustomTableViewCell.swift
 //  Krowd9
 //
 //  Created by Javid Sheikh on 07/07/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LeaguesTableViewCell: UITableViewCell {
+class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -18,9 +18,9 @@ class LeaguesTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func style(red: Bool, firstCell: Bool) {
+    func styleCell(red: Bool, firstCell: Bool, hideImageView: Bool = false) {
         if firstCell {
-            backgroundColor = .black
+            backgroundColor = Krowd9Color.gray
         } else {
             backgroundColor = !red ? Krowd9Color.red : Krowd9Color.gray
         }

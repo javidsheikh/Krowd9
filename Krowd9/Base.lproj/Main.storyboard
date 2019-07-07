@@ -120,7 +120,7 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="224"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmK-eR-m9L">
-                                <rect key="frame" x="0.0" y="352" width="414" height="510"/>
+                                <rect key="frame" x="0.0" y="1016" width="414" height="627"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="eQ7-tp-sg8">
                                         <rect key="frame" x="16" y="36" width="382" height="220"/>
@@ -172,19 +172,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bmK-eR-m9L" firstAttribute="top" secondItem="el9-gQ-u8L" secondAttribute="bottom" constant="36" id="2bQ-jl-PuS"/>
                             <constraint firstItem="bmK-eR-m9L" firstAttribute="leading" secondItem="aHb-Sf-vrd" secondAttribute="leading" id="BBt-x3-lDd"/>
                             <constraint firstItem="aHb-Sf-vrd" firstAttribute="trailing" secondItem="el9-gQ-u8L" secondAttribute="trailing" id="Fky-Y5-Xn3"/>
-                            <constraint firstItem="bmK-eR-m9L" firstAttribute="bottom" secondItem="aHb-Sf-vrd" secondAttribute="bottom" id="GR4-LJ-c6V"/>
                             <constraint firstItem="el9-gQ-u8L" firstAttribute="leading" secondItem="aHb-Sf-vrd" secondAttribute="leading" id="OdX-Wh-bYW"/>
                             <constraint firstItem="bmK-eR-m9L" firstAttribute="trailing" secondItem="aHb-Sf-vrd" secondAttribute="trailing" id="Qm8-0R-eCN"/>
                             <constraint firstItem="el9-gQ-u8L" firstAttribute="height" secondItem="U1g-XA-4uf" secondAttribute="height" multiplier="0.25" id="VTF-Aj-L54"/>
+                            <constraint firstItem="bmK-eR-m9L" firstAttribute="top" secondItem="el9-gQ-u8L" secondAttribute="bottom" constant="700" id="bei-gF-uyX"/>
+                            <constraint firstItem="bmK-eR-m9L" firstAttribute="height" secondItem="U1g-XA-4uf" secondAttribute="height" multiplier="0.7" id="idJ-z7-HqI"/>
                             <constraint firstItem="el9-gQ-u8L" firstAttribute="top" secondItem="aHb-Sf-vrd" secondAttribute="top" constant="48" id="jGJ-0c-Pf4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aHb-Sf-vrd"/>
                     </view>
                     <connections>
                         <outlet property="cardView" destination="bmK-eR-m9L" id="1Li-Zc-vdI"/>
+                        <outlet property="cardViewTopConstraint" destination="bei-gF-uyX" id="OkL-c8-eaU"/>
                         <outlet property="closeButton" destination="CRc-US-nCt" id="MjG-bY-vAZ"/>
                         <outlet property="foundedLabel" destination="x74-S3-st6" id="A0v-Om-vbb"/>
                         <outlet property="logoImageView" destination="el9-gQ-u8L" id="wBv-gC-Cdu"/>

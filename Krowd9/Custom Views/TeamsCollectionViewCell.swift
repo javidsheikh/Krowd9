@@ -11,9 +11,4 @@ import UIKit
 class TeamsCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var logoImageView: UIImageView!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 }

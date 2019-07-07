@@ -12,8 +12,6 @@ class Krowd9ThemeOptions {
     class func prepareAppearance() {
         UINavigationBar.appearance().barTintColor = .black
         UINavigationBar.appearance().tintColor = .white
-        UINavigationBar.appearance().titleTextAttributes =
-            [NSAttributedString.Key.foregroundColor: UIColor.white,
-             NSAttributedString.Key.font: UIFont(name: "AmericanTypewriter-Condensed", size: 22.0) as Any]
+        UINavigationBar.appearance().titleTextAttributes = Krowd9FontAttributes.navBarTitle.attributes
     }
 }

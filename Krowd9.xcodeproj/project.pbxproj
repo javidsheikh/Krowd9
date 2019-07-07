@@ -14,9 +14,10 @@
 		F92BF92B22CFDC9300C04AB5 /* IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF92A22CFDC9300C04AB5 /* IdentifiableType.swift */; };
 		F92BF93022D1F7A700C04AB5 /* Krowd9Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF92F22D1F7A700C04AB5 /* Krowd9Color.swift */; };
 		F92BF93222D1F94E00C04AB5 /* Krowd9ThemeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93122D1F94E00C04AB5 /* Krowd9ThemeOptions.swift */; };
-		F92BF93522D1FB7700C04AB5 /* LeaguesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93322D1FB7700C04AB5 /* LeaguesTableViewCell.swift */; };
-		F92BF93622D1FB7700C04AB5 /* LeaguesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92BF93422D1FB7700C04AB5 /* LeaguesTableViewCell.xib */; };
-		F92BF93822D2417B00C04AB5 /* FontAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93722D2417B00C04AB5 /* FontAttributes.swift */; };
+		F92BF93522D1FB7700C04AB5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93322D1FB7700C04AB5 /* CustomTableViewCell.swift */; };
+		F92BF93622D1FB7700C04AB5 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92BF93422D1FB7700C04AB5 /* CustomTableViewCell.xib */; };
+		F92BF93822D2417B00C04AB5 /* Krowd9FontAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93722D2417B00C04AB5 /* Krowd9FontAttributes.swift */; };
+		F92BF93C22D24F8700C04AB5 /* LogoAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BF93B22D24F8700C04AB5 /* LogoAnimator.swift */; };
 		F94CC1174BBCE0A3AC3C0931 /* Pods_Krowd9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC61CC224710C55E0EAA587C /* Pods_Krowd9.framework */; };
 		F9A6AD3522CE5FFD00243F95 /* TeamsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6AD3322CE5FFD00243F95 /* TeamsCollectionViewCell.swift */; };
 		F9A6AD3622CE5FFD00243F95 /* TeamsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A6AD3422CE5FFD00243F95 /* TeamsCollectionViewCell.xib */; };
@@ -73,9 +74,10 @@
 		F92BF92A22CFDC9300C04AB5 /* IdentifiableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableType.swift; sourceTree = "<group>"; };
 		F92BF92F22D1F7A700C04AB5 /* Krowd9Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Krowd9Color.swift; sourceTree = "<group>"; };
 		F92BF93122D1F94E00C04AB5 /* Krowd9ThemeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Krowd9ThemeOptions.swift; sourceTree = "<group>"; };
-		F92BF93322D1FB7700C04AB5 /* LeaguesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesTableViewCell.swift; sourceTree = "<group>"; };
-		F92BF93422D1FB7700C04AB5 /* LeaguesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaguesTableViewCell.xib; sourceTree = "<group>"; };
-		F92BF93722D2417B00C04AB5 /* FontAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAttributes.swift; sourceTree = "<group>"; };
+		F92BF93322D1FB7700C04AB5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		F92BF93422D1FB7700C04AB5 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		F92BF93722D2417B00C04AB5 /* Krowd9FontAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Krowd9FontAttributes.swift; sourceTree = "<group>"; };
+		F92BF93B22D24F8700C04AB5 /* LogoAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimator.swift; sourceTree = "<group>"; };
 		F9A6AD3322CE5FFD00243F95 /* TeamsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F9A6AD3422CE5FFD00243F95 /* TeamsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamsCollectionViewCell.xib; sourceTree = "<group>"; };
 		F9A6AD3722CE60D400243F95 /* UIImageView+load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+load.swift"; sourceTree = "<group>"; };
@@ -157,10 +159,22 @@
 		F92BF92E22D1F78700C04AB5 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				F92BF93722D2417B00C04AB5 /* Krowd9FontAttributes.swift */,
 				F92BF92F22D1F7A700C04AB5 /* Krowd9Color.swift */,
 				F92BF93122D1F94E00C04AB5 /* Krowd9ThemeOptions.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		F92BF93F22D26C3700C04AB5 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F92BF93322D1FB7700C04AB5 /* CustomTableViewCell.swift */,
+				F92BF93422D1FB7700C04AB5 /* CustomTableViewCell.xib */,
+				F9A6AD3322CE5FFD00243F95 /* TeamsCollectionViewCell.swift */,
+				F9A6AD3422CE5FFD00243F95 /* TeamsCollectionViewCell.xib */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		F9A6AD3922CE8C7300243F95 /* Team */ = {
@@ -200,9 +214,9 @@
 				F9AA59AB22CB58FA0018EBFA /* Assets.xcassets */,
 				F9AA59AD22CB58FA0018EBFA /* LaunchScreen.storyboard */,
 				F9AA59B022CB58FA0018EBFA /* Info.plist */,
-				F92BF93722D2417B00C04AB5 /* FontAttributes.swift */,
 				F92BF92E22D1F78700C04AB5 /* Styles */,
 				F9AA59EE22CBEC260018EBFA /* Custom Types */,
+				F92BF93F22D26C3700C04AB5 /* Custom Views */,
 				F9AA59E922CBE6A90018EBFA /* Extensions */,
 				F9AA59DD22CBD7DD0018EBFA /* Scenes */,
 				F9AA59E822CBE6170018EBFA /* Services */,
@@ -248,8 +262,6 @@
 			children = (
 				F9AA59C622CBBAE20018EBFA /* LeaguesViewController.swift */,
 				F9AA59CC22CBBBA20018EBFA /* LeaguesViewModel.swift */,
-				F92BF93322D1FB7700C04AB5 /* LeaguesTableViewCell.swift */,
-				F92BF93422D1FB7700C04AB5 /* LeaguesTableViewCell.xib */,
 			);
 			path = Leagues;
 			sourceTree = "<group>";
@@ -259,8 +271,6 @@
 			children = (
 				F9AA59C822CBBB280018EBFA /* TeamsViewController.swift */,
 				F9AA59CE22CBBBC70018EBFA /* TeamsViewModel.swift */,
-				F9A6AD3322CE5FFD00243F95 /* TeamsCollectionViewCell.swift */,
-				F9A6AD3422CE5FFD00243F95 /* TeamsCollectionViewCell.xib */,
 			);
 			path = Teams;
 			sourceTree = "<group>";
@@ -304,6 +314,7 @@
 				F9AA59EF22CBEC480018EBFA /* Endpoint.swift */,
 				F92BF92222CEA4CC00C04AB5 /* Path.swift */,
 				F92BF92A22CFDC9300C04AB5 /* IdentifiableType.swift */,
+				F92BF93B22D24F8700C04AB5 /* LogoAnimator.swift */,
 			);
 			path = "Custom Types";
 			sourceTree = "<group>";
@@ -395,7 +406,7 @@
 			files = (
 				F9AA59AF22CB58FA0018EBFA /* LaunchScreen.storyboard in Resources */,
 				F9A6AD3622CE5FFD00243F95 /* TeamsCollectionViewCell.xib in Resources */,
-				F92BF93622D1FB7700C04AB5 /* LeaguesTableViewCell.xib in Resources */,
+				F92BF93622D1FB7700C04AB5 /* CustomTableViewCell.xib in Resources */,
 				F9AA59AC22CB58FA0018EBFA /* Assets.xcassets in Resources */,
 				F9AA59AA22CB58F90018EBFA /* Main.storyboard in Resources */,
 			);
@@ -501,7 +512,7 @@
 				F9A6AD3B22CE8C8F00243F95 /* TeamViewController.swift in Sources */,
 				F9AA59A722CB58F90018EBFA /* CountriesViewController.swift in Sources */,
 				F92BF92B22CFDC9300C04AB5 /* IdentifiableType.swift in Sources */,
-				F92BF93522D1FB7700C04AB5 /* LeaguesTableViewCell.swift in Sources */,
+				F92BF93522D1FB7700C04AB5 /* CustomTableViewCell.swift in Sources */,
 				F9AA59C522CBB5D70018EBFA /* BindableType.swift in Sources */,
 				F9AA59A522CB58F90018EBFA /* AppDelegate.swift in Sources */,
 				F9AA59ED22CBE9FE0018EBFA /* NetworkService.swift in Sources */,
@@ -510,11 +521,12 @@
 				F9AA59DC22CBD5EC0018EBFA /* Scene+ViewController.swift in Sources */,
 				F92BF92322CEA4CC00C04AB5 /* Path.swift in Sources */,
 				F9AA59CD22CBBBA20018EBFA /* LeaguesViewModel.swift in Sources */,
-				F92BF93822D2417B00C04AB5 /* FontAttributes.swift in Sources */,
+				F92BF93822D2417B00C04AB5 /* Krowd9FontAttributes.swift in Sources */,
 				F9AA59CB22CBBB760018EBFA /* CountriesViewModel.swift in Sources */,
 				F9AA59CF22CBBBC70018EBFA /* TeamsViewModel.swift in Sources */,
 				F9A6AD3522CE5FFD00243F95 /* TeamsCollectionViewCell.swift in Sources */,
 				F9AA59C922CBBB280018EBFA /* TeamsViewController.swift in Sources */,
+				F92BF93C22D24F8700C04AB5 /* LogoAnimator.swift in Sources */,
 				F9AA59F022CBEC480018EBFA /* Endpoint.swift in Sources */,
 				F9A6AD3822CE60D400243F95 /* UIImageView+load.swift in Sources */,
 				F9AA59D422CBBD840018EBFA /* SceneCoordinatorType.swift in Sources */,

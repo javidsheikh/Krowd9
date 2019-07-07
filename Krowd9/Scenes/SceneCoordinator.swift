@@ -51,6 +51,10 @@ class SceneCoordinator: NSObject, UINavigationControllerDelegate, SceneCoordinat
             navigationController.pushViewController(viewController, animated: true)
 
         case .modal:
+            if let presentingController = currentViewController.navigationController?.viewControllers.last as? UIViewControllerTransitioningDelegate {
+                viewController.transitioningDelegate = presentingController
+            }
+
             currentViewController.present(viewController, animated: true) {
                 subject.onCompleted()
             }
@@ -61,11 +65,9 @@ class SceneCoordinator: NSObject, UINavigationControllerDelegate, SceneCoordinat
             .ignoreElements()
     }
 
-    @discardableResult
     func pop(animated: Bool = true) -> Completable {
         let subject = PublishSubject<Void>()
         if let presenter = currentViewController.presentingViewController {
-            // dismiss a modal controller
             currentViewController.dismiss(animated: animated) {
                 self.currentViewController = SceneCoordinator.actualViewController(for: presenter)
                 subject.onCompleted()

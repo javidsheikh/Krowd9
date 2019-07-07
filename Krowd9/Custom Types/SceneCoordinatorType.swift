@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 protocol SceneCoordinatorType {
-    /// transition to another scene
     @discardableResult
     func transition(to scene: Scene, type: SceneTransitionType) -> Completable
+    func pop(animated: Bool) -> Completable
 }
