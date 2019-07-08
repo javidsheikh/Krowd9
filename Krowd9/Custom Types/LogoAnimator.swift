@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LogoAnimator: NSObject, UIViewControllerAnimatedTransitioning {
-    let duration = 0.8
+final class LogoAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+    private let duration = 0.8
     var presenting = true
     var originFrame = CGRect.zero
 
@@ -37,24 +37,21 @@ class LogoAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
         if presenting {
             logoView.transform = scaleTransform
-            logoView.center = CGPoint(
-                x: initialFrame.midX,
-                y: initialFrame.midY)
+            logoView.center = CGPoint(x: initialFrame.midX, y: initialFrame.midY)
             logoView.clipsToBounds = true
         }
 
         containerView.addSubview(toView)
         containerView.bringSubviewToFront(logoView)
 
-        UIView.animate(
-            withDuration: duration,
-            delay: 0.0,
-            usingSpringWithDamping: 0.5,
-            initialSpringVelocity: 0.2,
-            animations: {
-                logoView.transform = self.presenting ? .identity : scaleTransform
-                logoView.center = CGPoint(x: finalFrame.midX, y: finalFrame.midY)
-                logoView.layer.cornerRadius = !self.presenting ? 20.0 : 0.0
+        UIView.animate(withDuration: duration,
+                       delay: 0.0,
+                       usingSpringWithDamping: 0.5,
+                       initialSpringVelocity: 0.2,
+                       animations: {
+            logoView.transform = self.presenting ? .identity : scaleTransform
+            logoView.center = CGPoint(x: finalFrame.midX, y: finalFrame.midY)
+            logoView.layer.cornerRadius = !self.presenting ? 20.0 : 0.0
         }, completion: { _ in
             transitionContext.completeTransition(true)
         })

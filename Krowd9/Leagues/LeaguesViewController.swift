@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class LeaguesViewController: UIViewController {
+final class LeaguesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 

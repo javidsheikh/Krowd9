@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class TeamViewController: UIViewController {
+final class TeamViewController: UIViewController {
 
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var cardView: UIView!

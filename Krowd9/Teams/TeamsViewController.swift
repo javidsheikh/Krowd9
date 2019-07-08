@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class TeamsViewController: UIViewController {
+final class TeamsViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 

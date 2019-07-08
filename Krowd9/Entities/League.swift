@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class League: Object, Decodable {
+final class League: Object, Decodable {
     @objc dynamic var leagueId: Int = 0
     @objc dynamic var name = ""
     //swiftlint:disable identifier_name

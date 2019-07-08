@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RealmSwift
 
-class CountriesViewController: UIViewController {
+final class CountriesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 

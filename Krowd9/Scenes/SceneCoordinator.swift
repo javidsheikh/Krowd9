@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class SceneCoordinator: NSObject, UINavigationControllerDelegate, SceneCoordinatorType {
+final class SceneCoordinator: NSObject, UINavigationControllerDelegate, SceneCoordinatorType {
 
     private var window: UIWindow
     private var currentViewController: UIViewController

@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class Country: Object, Decodable {
+final class Country: Object, Decodable {
     @objc dynamic var country = ""
     @objc dynamic var code: String?
     @objc dynamic var flag: String?

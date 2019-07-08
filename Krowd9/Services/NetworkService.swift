@@ -13,7 +13,7 @@ struct NetworkService: NetworkingType {
     private let session: URLSession
     private let baseURL: Observable<String>
 
-    private var headers: [String: String] {
+    private static var krowd9Headers: [String: String] {
         return  [
             "X-RapidAPI-Key": "2973497418msh1eb166ace76ccf2p1656b8jsnc9d11ccd2976",
             "Accept": "application/json"
@@ -30,7 +30,7 @@ struct NetworkService: NetworkingType {
             let urlString = baseURL + endpoint.toURLString
             guard let url = URL(string: urlString) else { return .empty() }
             var request = URLRequest(url: url)
-            request.allHTTPHeaderFields = self.headers
+            request.allHTTPHeaderFields = NetworkService.krowd9Headers
             return self.session.rx.decodable(request: request, type: D.self)
         }
     }

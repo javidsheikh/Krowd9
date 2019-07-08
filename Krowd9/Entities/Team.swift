@@ -8,7 +8,7 @@
 
 import RealmSwift
 
-class Team: Object, Decodable {
+final class Team: Object, Decodable {
     @objc dynamic var teamId: Int = 0
     @objc dynamic var name = ""
     //swiftlint:disable identifier_name
@@ -84,16 +84,3 @@ struct TeamService: Decodable {
         let teams: [Team]
     }
 }
-/*
-"team_id":53
-"name":"Reading"
-"code":NULL
-"logo":"https://www.api-football.com/public/teams/53.png"
-"country":"England"
-"founded":1871
-"venue_name":"Madejski Stadium"
-"venue_surface":"grass"
-"venue_address":"Shooters Way / Junction 11, M4"
-"venue_city":"Reading, Berkshire"
-"venue_capacity":24200
-*/
