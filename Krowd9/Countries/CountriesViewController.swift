@@ -34,12 +34,12 @@ final class CountriesViewController: UIViewController {
 extension CountriesViewController: BindableType {
     func bindViewModel() {
         viewModel.title
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: self.rx.title)
             .disposed(by: bag)
 
         viewModel.cellData
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: tableView.rx.items) { tableView, row, element in
                 let indexPath = IndexPath(row: row, section: 0)
                 //swiftlint:disable force_cast
@@ -57,7 +57,7 @@ extension CountriesViewController: BindableType {
             .disposed(by: bag)
 
         tableView.rx.modelSelected(Country.self)
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: viewModel.selectAction.inputs)
             .disposed(by: bag)
 

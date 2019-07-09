@@ -44,12 +44,12 @@ final class LeaguesViewController: UIViewController {
 extension LeaguesViewController: BindableType {
     func bindViewModel() {
         viewModel.title
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: self.rx.title)
             .disposed(by: bag)
 
         viewModel.cellData
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .do(onNext: { [weak self] leagues in
                 self?.tableView.backgroundColor = leagues.count % 2 == 0 ? Krowd9Color.gray : Krowd9Color.red
             })
@@ -70,7 +70,7 @@ extension LeaguesViewController: BindableType {
             .disposed(by: bag)
 
         tableView.rx.modelSelected(League.self)
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: viewModel.selectAction.inputs)
             .disposed(by: bag)
     }

@@ -19,7 +19,6 @@ struct CountriesViewModel {
     private let globalScheduler = ConcurrentDispatchQueueScheduler(queue: DispatchQueue.global())
     private let bag = DisposeBag()
     let title: Observable<String>
-    let countriesObservable: Observable<Country>
     let cellData: Observable<[Country]>
 
     init(sceneCoordinator: SceneCoordinator, networkService: NetworkingType) {
@@ -27,8 +26,8 @@ struct CountriesViewModel {
         self.networkService = networkService
         self.title = Observable.just("Countries")
 
-        self.countriesObservable = networkService.decode(endpoint: .countries, type: CountryService.self)
-            .observeOn(globalScheduler)
+        networkService.decode(endpoint: .countries, type: CountryService.self)
+            .subscribeOn(globalScheduler)
             .flatMap { service -> Observable<Country> in
                 return Observable.create { observer in
                     service.api.countries.forEach { observer.onNext($0) }
@@ -36,8 +35,6 @@ struct CountriesViewModel {
                 }
             }
             .share(replay: 1, scope: .forever)
-
-        self.countriesObservable
             .filter({ country in
                 let realm = RealmProvider.current.realm
                 return realm.objects(Country.self).filter(NSPredicate(format: "country = %@", country.country)).isEmpty

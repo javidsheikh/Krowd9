@@ -41,12 +41,12 @@ final class TeamsViewController: UIViewController {
 extension TeamsViewController: BindableType {
     func bindViewModel() {
         viewModel.title
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: self.rx.title)
             .disposed(by: bag)
 
         viewModel.cellData
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: collectionView.rx.items) { collectionView, item, element in
                 let indexPath = IndexPath(item: item, section: 0)
                 //swiftlint:disable force_cast
@@ -60,7 +60,7 @@ extension TeamsViewController: BindableType {
             .disposed(by: bag)
 
         collectionView.rx.modelSelected(Team.self)
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .bind(to: viewModel.selectAction.inputs)
             .disposed(by: bag)
     }

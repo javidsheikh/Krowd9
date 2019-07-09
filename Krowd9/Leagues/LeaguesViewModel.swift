@@ -24,7 +24,7 @@ struct LeaguesViewModel {
         self.title = Observable.just(model.country)
 
         networkService.decode(endpoint: .leagues(model.country), type: LeagueService.self)
-            .observeOn(globalScheduler)
+            .subscribeOn(globalScheduler)
             .flatMap { service -> Observable<League> in
                 return Observable.create { observer in
                     service.api.leagues.forEach { observer.onNext($0) }
