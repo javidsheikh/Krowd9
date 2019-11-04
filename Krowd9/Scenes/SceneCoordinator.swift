@@ -55,7 +55,7 @@ final class SceneCoordinator: NSObject, UINavigationControllerDelegate, SceneCoo
                 as? UIViewControllerTransitioningDelegate {
                 viewController.transitioningDelegate = presentingController
             }
-
+            viewController.modalPresentationStyle = .fullScreen
             currentViewController.present(viewController, animated: true) {
                 subject.onCompleted()
             }

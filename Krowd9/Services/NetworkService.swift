@@ -15,7 +15,7 @@ struct NetworkService: NetworkingType {
 
     private static var krowd9Headers: [String: String] {
         return  [
-            "X-RapidAPI-Key": "2973497418msh1eb166ace76ccf2p1656b8jsnc9d11ccd2976",
+            "X-RapidAPI-Key": "c320ba8cf4msh433689a4e597541p13091ajsn3f35180d6fe4",
             "Accept": "application/json"
         ]
     }
